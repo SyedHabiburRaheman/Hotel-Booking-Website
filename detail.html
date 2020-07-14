@@ -5,16 +5,39 @@
     <body>
         <div>
             <!-- Header Div -->
-            <img src="./assests/images/logo.png" 
-            alt="logo" height="150" width="200">
-            <a href="login.html" target="_blank">login</a>
+            <a href="index.html">
+                <img src="./assests/images/logo.png" 
+                 alt="logo" height="150" width="200">
+            </a>
+            <a href="login.html">Login</a>
         </div>
 
         <div>
             <!-- Content Div -->
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
             alt="Radisson Blu Hotel" height="550" width="1000"></br>
-            <a href="payment.html">Book Now</a>
+        </br>
+
+            <form action="./payment.html" method="GET">
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+            </br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+            </br>
+                <label for="fromDate">From Date:</label>
+                <input type="date" id="fromDate" name="fromDate" required>
+            </br>
+                <label for="toDate">To Date:</label>
+                <input type="date" id="toDate" name="toDate" required>
+            </br>
+                <label for="total">Total:</label>
+                <input type="text" id="total" name="total" readonly>
+            </br>
+                <input type="submit" value="Book Now"> 
+            </form>
+
+            <!-- <a href="payment.html">Book Now</a> -->
             <h2>Radisson Blu Hotel</h2>
             <p>RATING</p>
             <p>5 Star</p>
@@ -34,7 +57,7 @@
 
         <div>
             <!-- Footer Div -->
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </br>
             <a href="https://www.facebook.com" target="_blank">
                 <img src="./assests/images/facebook.png" alt="Facebook" height="20" width="22">
