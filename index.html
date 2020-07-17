@@ -1,50 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/common.css">
+        <link rel="stylesheet" href="./styles/index.css">
         <title>Index</title>
     </head>
     <body>
-        <div>
+        <div class="main">
             <!-- Header Div -->
-            <img src="./assests/images/logo.png" 
-            alt="logo" height="150" width="200">
+        <header>
+            <img src="./assests/images/logo.png" alt="logo">
             <a href="login.html">Login</a>
-        </div>
+        </header>
 
-        <div>
-            <!-- Content Div -->
-            <input type="text" placeholder="City">
-        </br>
+        <div class="content">
+            <div class="search-bar">
+            <input type="text" name="city" placeholder="City"/>
+        </div>
+    
+        <div class="city-images">
             <a href="list.html">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                alt="Delhi" height="300" width="300">
+                alt="Delhi">
             </a>
 
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
-            alt="Goa" height="300" width="300">
+            alt="Goa">
 
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
-            alt="Hyderabad" height="300" width="300">
+            alt="Hyderabad">
 
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
-            alt="Kolkata" height="300" width="300">
-        </br>
+            alt="Kolkata">
+        </div>
+        
             <a href="index.html">View more >></a>
         </div>
 
+        <footer>
         <div>
             <!-- Footer Div -->
             <a href="contact.html">Contact Us</a>
-        </br>
+        <div class="social-media-icons">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="./assests/images/facebook.png" alt="Facebook" height="20" width="22">
+                <img src="./assests/images/facebook.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="./assests/images/instagram.png" alt="Instagram" height="20" width="22">
+                <img src="./assests/images/instagram.png" alt="Instagram">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="./assests/images/twitter.png" alt="Twitter" height="20" width="22">
+                <img src="./assests/images/twitter.png" alt="Twitter">
             </a>
-            <p>© 2020 ROOM SEARCH PVT.LTD.</p>
         </div>
+            <div><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>
+        </div>
+        </footer>
     </body>
 </html>

@@ -1,23 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Detail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Details</title>
+        <link rel="stylesheet" href="./styles/common.css">
+        <link rel="stylesheet" href="./styles/detail.css">
     </head>
     <body>
-        <div>
+        <div class="main">
             <!-- Header Div -->
-            <a href="index.html">
-                <img src="./assests/images/logo.png" 
-                 alt="logo" height="150" width="200">
-            </a>
+        <header>
+            <a href="index.html"><img src="./assests/images/logo.png" alt="logo"></a>
             <a href="login.html">Login</a>
-        </div>
+        </header>
 
+        <div class="content">
         <div>
             <!-- Content Div -->
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-            alt="Radisson Blu Hotel" height="550" width="1000"></br>
+            alt="Radisson Blu Hotel">
         </br>
-
             <form action="./payment.html" method="GET">
                 <label for="adults">Adults:</label>
                 <input type="number" id="adults" name="adults" min="1" required>
@@ -37,7 +40,6 @@
                 <input type="submit" value="Book Now"> 
             </form>
 
-            <!-- <a href="payment.html">Book Now</a> -->
             <h2>Radisson Blu Hotel</h2>
             <p>RATING</p>
             <p>5 Star</p>
@@ -54,21 +56,25 @@
             <p>Set in the bustling business district, this upmarket hotel is 2.3 km from Indira Gandhi International Airport. It’s also 4.8 km from shopping at Ambiance Mall and 11 km from live entertainment at Kingdom of Dreams.</p>
 
         </div>
+        </div>
 
+        <footer>
         <div>
             <!-- Footer Div -->
             <a href="contact.html">Contact Us</a>
-        </br>
+        <div class="social-media-icons">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="./assests/images/facebook.png" alt="Facebook" height="20" width="22">
+                <img src="./assests/images/facebook.png" alt="Facebook" >
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="./assests/images/instagram.png" alt="Instagram" height="20" width="22">
+                <img src="./assests/images/instagram.png" alt="Instagram">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="./assests/images/twitter.png" alt="Twitter" height="20" width="22">
+                <img src="./assests/images/twitter.png" alt="Twitter">
             </a>
-            <p>© 2020 ROOM SEARCH PVT.LTD.</p>
         </div>
+            <div><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>
+        </div>
+        </footer>
     </body>
 </html>
