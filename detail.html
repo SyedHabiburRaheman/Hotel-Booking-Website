@@ -6,14 +6,15 @@
         <title>Details</title>
         <link rel="stylesheet" href="./styles/common.css">
         <link rel="stylesheet" href="./styles/detail.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
 
     <body>
     <div class="main">
-            <!-- Header Div -->
+        <!-- Header Div -->
         <header>
             <a href="index.html"><img src="./assests/images/logo.png" alt="logo"></a>
-            <a href="login.html">Login</a>
+            <a class="login" href="login.html">Login</a>
         </header>
 
         <div class="content">
@@ -26,19 +27,19 @@
             <form action="./payment.html" method="GET">
                 <label for="adults">Adults:</label>
                 <input type="number" id="adults" name="adults" min="1" required>
-            </br>
+            <br>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required autocomplete="off">
-            </br>
+            <br>
                 <label for="fromDate">From Date:</label>
                 <input type="date" id="fromDate" name="fromDate" required>
-            </br>
+            <br>
                 <label for="toDate">To Date:</label>
                 <input type="date" id="toDate" name="toDate" required>
-            </br>
+            <br>
                 <label for="total">Total:</label>
                 <input type="text" id="total" name="total" readonly>
-            </br>
+            <br>
                 <input type="submit" value="Book Now"> 
             </form>
         </div>
@@ -62,24 +63,24 @@
 
         </div>
 
-        <footer>
-        <div>
-            <!-- Footer Div -->
-            <a href="contact.html">Contact Us</a>
+    <!-- Footer Div -->
+    <footer>
+        <div class="contact-us">
+            <a href="contact.html" target="_self">Contact Us</a>
+        </div>
+        <div class="copyright"><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>                
         <div class="social-media-icons">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./assests/images/facebook.png" alt="Facebook" >
+            <a href="https://www.facebook.com/"  target="_blank">
+                <img src="./assests/images/facebook.png" alt="Fackbook"/>
             </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="./assests/images/instagram.png" alt="Instagram">
+            <a href="https://www.instagram.com/"  target="_blank">
+                <img src="./assests/images/instagram.png" alt="Instagram"/>
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="./assests/images/twitter.png" alt="Twitter">
+            <a href="https://www.twitter.com/"  target="_blank">
+                <img src="./assests/images/twitter.png" alt="Twitter"/>
             </a>
         </div>
-            <div><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>
-        </div>
-        </footer>
+    </footer>
         
     </div>
     </body>

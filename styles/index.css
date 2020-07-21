@@ -1,21 +1,57 @@
 /******************** Content ******************/
 
-.content img{
-    width: 150px;
-    height: 150px;
+.content{
+    padding-top: 60px;
 }
 
-.search-bar{
+.search-box{
     background: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg') center no-repeat;
     height: 380px;
     background-size: cover;
+    position: relative;
+}
+
+.search-bar {  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 348px;
+    width: 100%;
+}
+
+.search-bar input{
+    border: 1px solid transparent;
+    background-color:#f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius:12px;
+    width: 100%;
 }
 
 .city-images{
     margin: auto 15%;
+    text-align: center;
 }
 
 .city-images img{
+    width: 150px;
+    height: 150px;
     padding: 4%;
     border-radius: 25%;
+}
+
+.city-images a{
+    text-decoration: none;
+}
+
+.view-more{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.view-more a{
+    text-decoration: none;
+    color:#000;
 }

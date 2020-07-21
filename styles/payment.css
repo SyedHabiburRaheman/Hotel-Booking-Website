@@ -1,4 +1,4 @@
-.content img{
+.hotel-details img{
     width: 500px;
     height: 500px;
 }
@@ -19,4 +19,13 @@
     padding: 1% 2%;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.pay-now{
+    padding-bottom: 30px;
+}
+
+.pay-now a{
+    text-decoration: none;
+    color: #000;
 }
