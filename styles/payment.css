@@ -2,3 +2,21 @@
     width: 500px;
     height: 500px;
 }
+
+.hotel-details{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height:20%;
+    margin: 2% auto;
+}
+
+.customer_details{
+    margin: 2%;
+}
+
+.payment-details{
+    margin: 2%;
+    padding: 1% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}

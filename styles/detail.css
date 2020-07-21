@@ -2,3 +2,15 @@
     width: 500px;
     height: 500px;
 }
+
+.content img{
+    margin:2% 4% 0% 4%;
+}
+
+.form-container{
+    margin: 0% 4% 1% 4%;
+}
+
+.hotel-details{
+    margin: 1% 4% 2% 4%;
+}

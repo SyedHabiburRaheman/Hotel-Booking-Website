@@ -2,6 +2,13 @@
 body, .main{
     width: 100vw;
     height: 100vh;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header,footer{
+    background-color: rosybrown;
 }
 
 /******************* Header ******************/
@@ -13,7 +20,7 @@ header img{
 
 /******************* Footer ******************/
 
-footer a img{
+footer img{
     width: 22px;
     height: 20px;
 }
