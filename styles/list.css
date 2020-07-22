@@ -9,13 +9,22 @@
     justify-content: space-between;
 }
 
+.hotel-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-box2{
+    padding: 1% 3%;
+}
+
 .hotels img{
     width: 250px;
     height: 250px;
 }
 
 .hotel-description{
-    background-color:rgb(132,136,139);
+    background-color:lightgrey;
     margin: 2% 4%;
     width: 40%;
     height: auto;
