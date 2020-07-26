@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>List</title>
-        <link rel="stylesheet" href="./styles/common.css">
-        <link rel="stylesheet" href="./styles/list.css">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/list.css">  
+</head>
     
-    <body>
+<body>
     <div class="main">
-            <!-- Header Div -->
+
+        <!-- Header Div -->
         <header>
             <a href="index.html"><img src="./assests/images/logo.png" alt="logo"></a>
-            <a class="login" href="login.html">Login</a>
+            <!-- Button trigger modal -->
+            <a class="login btn btn-light btn-sm text-uppercase" 
+            data-toggle="modal" data-target="#login" href="./login.html">Login</a>
         </header>
     
     <!-- Content Div -->
     <div class="content">
-        <div class="views">    
-            <ul>
-                <li><a href="#list-view">List View</a></li>
-                <li><a href="#map-view">Map View</a></li>
+        <div class="views">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                    role="tab" aria-controls="pills-home" aria-selected="true"
+                    href="#list-view">List View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                    role="tab" aria-controls="pills-profile" aria-selected="false" href="#map-view">Map View</a>
+                </li>
             </ul>
         </div>
-
-    <div class="hotels" id="list-view">
+        
+        <div class="parent-div tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="hotels" id="list-view">
 
         <div class="hotel-description">
             <a href="detail.html">
@@ -72,34 +85,105 @@
             </div>
         </div> 
     </div>
-    
+    </div>
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         <div class="map" id="map-view">
              <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
                 alt="Map View" height="500" width="1000">
                 <p>MAP VIEW</p>
         </div>
-        
     </div>
 
-    <!-- Footer Div -->
-    <footer>
-        <div class="contact-us">
-            <a href="contact.html" target="_self">Contact Us</a>
+    <!-- Footer -->
+        <footer>
+            <div class="contact-us">
+                <!-- Button trigger modal -->
+                <a class="btn btn-info btn-sm text-white" data-toggle="modal" 
+                data-target="#contact-us" target="_self" href="./contact.html" >Contact Us</a>
+            </div>
+            <div class="copyright"><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/"  target="_blank">
+                    <img src="./assests/images/facebook.png" alt="Fackbook"/>
+                </a>
+                <a href="https://www.instagram.com/"  target="_blank">
+                    <img src="./assests/images/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="https://www.twitter.com/"  target="_blank">
+                    <img src="./assests/images/twitter.png" alt="Twitter"/>
+                </a>
+            </div>
+        </footer>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body pt-4 pb-2 pl-0 pr-0">
+                <!-- Modal Form -->
+                <form>
+                    <div class="form-group row text-center mx-auto">
+                        <label for="exampleInputName" class="col-sm-4 col-form-label line-height-1">Username:</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control form-control-sm p-1" id="exampleInputName" autocomplete="off" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <div class="form-group row text-center mx-auto">
+                        <label for="exampleInputPassword" class="col-sm-4 col-form-label line-height-1">Password:</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control form-control-sm p-1" id="exampleInputPassword" autocomplete="off" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center pb-0">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="copyright"><span>© 2020 ROOM SEARCH PVT.LTD.</span></div>                
-        <div class="social-media-icons">
-            <a href="https://www.facebook.com/"  target="_blank">
-                <img src="./assests/images/facebook.png" alt="Fackbook"/>
-            </a>
-            <a href="https://www.instagram.com/"  target="_blank">
-                <img src="./assests/images/instagram.png" alt="Instagram"/>
-            </a>
-            <a href="https://www.twitter.com/"  target="_blank">
-                <img src="./assests/images/twitter.png" alt="Twitter"/>
-            </a>
         </div>
-    </footer>
+    </div>
+    
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body pt-4 pb-2 pl-0 pr-0">
+                <p class="mb-0 mt-0 pl-3">Thank you for reaching out!!!</p>
+                <p class="mt-0 pl-3">Please enter your email and we will get back to you.</p>
+                <!-- Modal Form -->
+                <form>
+                    <div class="form-group row mx-auto">
+                        <label for="exampleInputEmail" class="col-sm-2 col-form-label line-height-1 pl-3 pr-0">Email:</label>
+                        <div class="col-sm-6 pr-0">
+                            <input type="email" class="form-control form-control-sm p0-1" id="exampleInputEmail" autocomplete="off" placeholder="Enter your email id">
+                        </div>
+                    </div>
+                    <div class="modal-footer pb-0">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
 
     </div>
-    </body>
+
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
 </html>

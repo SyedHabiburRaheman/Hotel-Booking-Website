@@ -1,7 +1,7 @@
-.hotel-details img{
+/* .hotel-details img{
     width: 500px;
     height: 500px;
-}
+} */
 
 .hotel-details{
     background-color: rgb(132,136,139);
@@ -28,6 +28,10 @@
     padding-left: 3%;
 }
 
+.hotel-description h2{
+    margin-bottom: 0;
+}
+
 .customer-log-deatils{
     display: flex;
     flex-direction: row;
@@ -52,9 +56,9 @@
     border-radius: 5px;
 } */
 
-.pay-now{
+/* .pay-now{
     padding-bottom: 30px;
-}
+} */
 
 .pay-now a{
     text-decoration: none;

@@ -30,6 +30,11 @@
     height: auto;
 }
 
+.hotel-description:hover{
+    background-color: rosybrown;
+    transition: .1s ease;
+}
+
 .hotel-description a{
     text-decoration: none;
     color: #000;
@@ -61,6 +66,6 @@
     padding-right: 35px;
 }
 
-.map{
+/* .map{
     display: none;
-}
+} */

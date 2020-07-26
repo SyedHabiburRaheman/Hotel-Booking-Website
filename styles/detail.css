@@ -15,7 +15,6 @@
 
 .content img{
     width: 500px;
-    height: 350px;
     max-height: 350px;
 }
 
@@ -42,12 +41,14 @@
     width: 60%;
 }
 
-.form-container form .input-container input[type="date"]{
-    width: 60%;
-}
-
 .book-now{
     text-align: center;
+}
+
+.b-hover:hover {
+    color: #fff !important;
+    background-color:#28a745!important;
+    border-color: #28a745!important;
 }
 
 .book-now input{
