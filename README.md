@@ -3,11 +3,12 @@
 
 A Hotel Booking Website using HTML, CSS, JavaScript and AJAX. The website will allow you to choose or search for a hotel in a city of your choice and book a room in that hotel.
 
---------------------------------------------------------------------- PROJECT STRUCTURE ---------------------------------------------------------------
+                                                           PROJECT STRUCTURE
 
 This project consists of the following HTML, CSS and JavaScript files along with the assets that will be required while building the project:
 
--------------------------------------------------  HTML  ----------------------------------------------------------------------------------------------
+                                                                HTML
+                                                            
 contact.html: This HTML file contains the structure of the Contact Us form.
 
 detail.html: This HTML file contains the structure of the Hotel Details Web Page.
@@ -22,7 +23,8 @@ login.html: This HTML file contains the structure of the Login form.
 
 payment.html: This HTML file contains the structure of the Payments Web Page.
 
--------------------------------------------------  CSS  -------------------------------------------------------------------------------------------------
+                                                                CSS
+                                                                
 styles: This folder contains all the CSS files, which are as follows:
 
 common.css: This CSS file contains the styles that will be common across all the HTML files.
@@ -37,7 +39,8 @@ loader.css: This CSS file contains the styles required for the loader.html file.
 
 payment.css: This CSS file contains the styles required for the payment.html file.
 
--------------------------------------------------  JS  --------------------------------------------------------------------------------------------------
+                                                                JS
+                                                                
 scripts: This folder contains all the JavaScript files, which are as follows:
 
 common.js: This JavaScript file contains the JavaScript code that will be common for all the pages.
@@ -50,7 +53,8 @@ index.js: This JavaScript file contains the required JavaScript code for the ind
 
 payment.js: This JavaScript file contains the required JavaScript code for the payment.html file.
 
--------------------------------------------------  ASSETS  --------------------------------------------------------------------------------------------
+-------------------------------------------------  ASSETS  ---------------------------------------------------
+
 assets: This folder contains all the assets required to build the project, which are as follows:
 
 images: This folder contains all the static images that you will need for the Project, which are as follows:
