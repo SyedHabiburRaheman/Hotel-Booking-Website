@@ -58,3 +58,23 @@
 .hotel-details{
     margin: 2%;
 }
+
+.checked{
+    color: orange;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    color:rosybrown;
+    font-size: 55px;
+    background-image: none;
+}
+
+.carousel-control-prev{
+    left: -8%;
+    top: -30%;
+}
+
+.carousel-control-next{
+    right: -7%;
+    top: -30%;
+}

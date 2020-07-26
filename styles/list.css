@@ -66,6 +66,14 @@
     padding-right: 35px;
 }
 
+.checked {
+    color: orange;
+}
+
+/* .hotel-description .card-box2 .fa{
+    color: orange;
+} */
+
 /* .map{
     display: none;
 } */
