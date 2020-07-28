@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5% 0% 3% 0%;
+    /* padding: 5% 0% 3% 0%; */
 }
 
 .city-images img{
@@ -51,6 +51,7 @@
 
 .images{
     position: relative;
+    margin: 10px;
 }
 
 .overlay{
@@ -97,4 +98,24 @@
     text-decoration: none;
     color:#000;
     font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .search-bar{
+        width: 50%;
+    }
+    .city-images {
+        width: 50%;
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .content {
+        padding-bottom: 9%;
+    }
+    .city-images {
+        width: 63%;
+        margin: 0px auto;
+    }
 }

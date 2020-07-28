@@ -1,6 +1,9 @@
 *{
     scroll-behavior: smooth;
 }
+.content{
+    padding-bottom: 5%;
+}
 
 .hotels{
     display: flex;
@@ -15,7 +18,7 @@
 }
 
 .card-box2{
-    padding: 1% 3%;
+    padding: 1% 4%;
 }
 
 .hotels img{
@@ -66,6 +69,11 @@
     padding-right: 35px;
 }
 
+.map img{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .checked {
     color: orange;
 }
@@ -77,3 +85,38 @@
 /* .map{
     display: none;
 } */
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .hotels{
+        padding: 0 15px;
+    }
+    .hotel-description {
+        width: 100%;
+        margin: 3% auto;
+    }
+    .map img{
+        width: 80%;
+    }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .hotel-description {
+        width: 100%;
+        margin: 3% auto;
+    }
+    .hotel-card{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hotels img{
+        width: 100%;
+    }
+    .hotel-description{
+        height: 400px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .hotels{
+        flex-direction: column;
+    }
+}

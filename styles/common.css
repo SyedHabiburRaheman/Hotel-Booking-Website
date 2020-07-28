@@ -7,6 +7,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     color:#000;
     position: relative;
+    overflow-x: hidden;
 }
 
 header,footer{
@@ -53,6 +54,7 @@ header .login{
 
 .content{
     padding-top: 60px;
+    min-height: 100vh;
 }
 
 /******************* Footer ******************/
@@ -85,7 +87,7 @@ footer a img{
 
 .social-media-icons{
     display: inline-block;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 .social-media-icons a{
@@ -99,7 +101,26 @@ footer a img{
     text-align: center;
 }
 
-.col-sm-2{
+/* .col-sm-2{
     max-width: 2%;
     max-width: 9.666667%;
+} */
+
+@media (min-width: 320px) and (max-width: 575px) 
+{
+    form .row{
+        flex-wrap: nowrap;
+    }
+
+    /* .col-form-label{
+        padding-left: 0;
+    } */
+
+    .contactus-modal .col-sm-2 {
+        max-width: 15.666667%;
+    }
+
+    .contactus-modal .col-sm-6{
+        width: 80%;
+    } 
 }
