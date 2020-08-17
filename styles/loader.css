@@ -1,18 +1,27 @@
+body{
+    height: 100vh;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+
 .loader{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 12px solid #f3f3f3;
-    border-top:12px solid #444444;
+    border: 10px solid #f3f3f3;
+    border-top:10px solid #444444;
     margin: 18% auto;
     animation: spin 1s linear infinite;
-}
-
-body{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    height: 100vh;
+    position: absolute;
+    left: 48%;
 }
 
 @keyframes spin{

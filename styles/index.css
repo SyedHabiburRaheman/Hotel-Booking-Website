@@ -4,6 +4,10 @@
     padding-top: 60px;
 } */
 
+#mydiv{
+    display: none;
+}
+
 .search-box{
     background: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg') center no-repeat;
     height: 380px;

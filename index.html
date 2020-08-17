@@ -8,14 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/loader.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Main Div -->
     <div class="main-container">
 
-        <!-- Header -->
+        <!-- Header Div -->
         <header id="navheader"></header>
 
-        <!-- Content -->
+        <!-- Content Div -->
         <div class="content">
             <div class="search-box">
                 <div class="search-bar">
@@ -55,7 +62,7 @@
                 </div>  
             </div> 
 
-            <div class="city-images flex-wrap pt-5 pb-4">
+            <div class="city-images flex-wrap pt-5 pb-4" id="mydiv">
                 <div class="images">
                     <div class="overlay"></div>
                     <p class="image-title">Chennai</p>
@@ -86,17 +93,17 @@
             </div> 
 
             <div class="view-more mb-4">
-                <a href="index.html"><button type="button" class="btn btn-secondary">View More</button></a>
+                <a class="btn btn-secondary text-white" onclick="view()" id="viewMore">View More</a>
             </div>
         </div>
 
         <!-- Footer -->
         <footer id="footer"></footer>
 
-        <!-- Modal Login -->
-        <div class="login-modal modal" id="login-modal" data-backdrop="false"></div>
+        <!-- Login -->
+        <div class="login-modal modal" id="login-modal" onclick="loginFunction()" data-backdrop="false"></div>
         
-        <!-- Modal 2 Contact Us -->
+        <!-- Contact Us -->
         <div class="contactus-modal modal" id="contactus-modal" data-backdrop="false"></div>
 
     </div>
@@ -104,6 +111,7 @@
     <!-- jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="./scripts/common.js"></script>
+    <script async src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
